@@ -30,7 +30,7 @@ function expressionCalculator(expr) {
     ind = string.search(regexp);
     while (ind != -1){
         let plusSplit = string.split('');
-        let result = string.match(/\*|\/|/-|/+/g);
+        let result = string.match(/\*|\/|\-|\+/g);
         let konec = 0;
         if (result.length > 1) {konec = result[1]-1} else {konec = string.length-1;}
         let a = [];
@@ -53,7 +53,7 @@ function expressionCalculator(expr) {
     ind = string.search(regexp);
     while (ind != -1){
         let plusSplit = string.split('');
-        let result = string.match(/\*|\/|/-|/+/g);
+        let result = string.match(/\*|\/|\-|\+/g);
         let konec = 0;
         if (result.length > 1) {konec = result[1]-1} else {konec = string.length-1;}
         let a = [];
